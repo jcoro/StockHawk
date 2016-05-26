@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_700">#646464</color>
+    <color name="black">#000000</color>
+
+    <color name="material_blue_700">#1976D2</color>
+    <color name="material_blue_500">#2196F3</color>
+    <color name="material_red_700">#D50000</color>
+    <color name="material_green_700">#00C853</color>
+
+    <!-- our detail accent colors -->
+    <color name="detail_accent_pane_background">#455A64</color>
+    <color name="detail_accent_label">#90A4AE</color>
+
+</resources>

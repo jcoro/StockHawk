@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="historical_data_array">
+        <item>@string/one_week</item>
+        <item>@string/one_month</item>
+        <item>@string/three_months</item>
+        <item>@string/six_months</item>
+    </string-array>
+</resources>
