@@ -22,10 +22,9 @@ import java.util.Locale;
  */
 public class Utils {
 
-    private static String LOG_TAG = Utils.class.getSimpleName();
     public static boolean showPercent = true;
-    public static final String DATE_FORMAT = "yyyy-MM-dd";
-    public static final SimpleDateFormat FORMAT = new SimpleDateFormat(DATE_FORMAT, new Locale("en", "US"));
+    private static final String DATE_FORMAT = "yyyy-MM-dd";
+    private static final SimpleDateFormat FORMAT = new SimpleDateFormat(DATE_FORMAT, new Locale("en", "US"));
 
     public static String getDateString( long dateInMillis ) {
         return FORMAT.format(dateInMillis);
@@ -133,7 +132,7 @@ public class Utils {
         return batchOperations;
     }
 
-    public static String truncateBidPrice(String bidPrice){
+    private static String truncateBidPrice(String bidPrice){
         bidPrice = String.format(new Locale("en", "US"), "%.2f", Float.parseFloat(bidPrice));
         return bidPrice;
     }
@@ -144,7 +143,7 @@ public class Utils {
      * @param isPercentChange A boolean indicating if the preference is to show change as a percentage.
      * @return The truncated change in stock prices or null if the value in the yahoo data is null.
      */
-    public static String truncateChange(String change, boolean isPercentChange){
+    private static String truncateChange(String change, boolean isPercentChange){
         if(!change.equals("null")) {
             String weight = change.substring(0, 1);
             String ampersand = "";
@@ -169,7 +168,7 @@ public class Utils {
      * @param jsonObject the JSONObject from which the ContentProviderOperation is derived.
      * @return A ContentProviderOperation necessary to store the quote info in the database
      */
-    public static ContentProviderOperation buildBatchOperation(JSONObject jsonObject){
+    private static ContentProviderOperation buildBatchOperation(JSONObject jsonObject){
         ContentProviderOperation.Builder builder = ContentProviderOperation.newInsert(
                 QuoteProvider.Quotes.CONTENT_URI);
         String ask = null;

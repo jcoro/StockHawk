@@ -166,7 +166,7 @@ public class DetailActivity extends AppCompatActivity implements CustomResultRec
      * @param symbol the stock symbol.
      * @param startDate the start date requested.
      */
-    public void fetchHistoricalData(String symbol, String startDate){
+    private void fetchHistoricalData(String symbol, String startDate){
         String date = Utils.getDateString(System.currentTimeMillis());
         Intent histDataIntent = new Intent(this, HistoricalDataIntentService.class);
         histDataIntent.putExtra("startDate", startDate);
@@ -180,7 +180,7 @@ public class DetailActivity extends AppCompatActivity implements CustomResultRec
      * Updates the chart
      * @param position The current position of the spinner which dictates the data that is shown.
      */
-    public void updateChart(int position){
+    private void updateChart(int position){
         int numberOfEntries;
 
         switch (position) {

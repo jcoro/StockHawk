@@ -25,12 +25,12 @@ public class StockWidgetRemoteViewsService extends RemoteViewsService {
             QuoteColumns.ISUP
     };
 
-    static final int INT_QUOTE_ID = 0;
-    static final int INT_SYMBOL = 1;
-    static final int INT_BIDPRICE = 2;
-    static final int INT_PERCENT_CHANGE = 3;
-    static final int INT_CHANGE = 4;
-    static final int INT_IS_UP = 5;
+    private static final int INT_QUOTE_ID = 0;
+    private static final int INT_SYMBOL = 1;
+    private static final int INT_BIDPRICE = 2;
+    private static final int INT_PERCENT_CHANGE = 3;
+    private static final int INT_CHANGE = 4;
+    private static final int INT_IS_UP = 5;
 
     @Override
     public RemoteViewsFactory onGetViewFactory(Intent intent) {

@@ -20,7 +20,7 @@ import java.io.IOException;
  */
 public class HistoricalDataIntentService extends IntentService {
     private static final String LOG_TAG = HistoricalDataIntentService.class.getName();
-    private OkHttpClient client = new OkHttpClient();
+    private final OkHttpClient client = new OkHttpClient();
 
     public HistoricalDataIntentService(){
         super(LOG_TAG);
@@ -80,7 +80,7 @@ public class HistoricalDataIntentService extends IntentService {
      *
      * @param url a url String constructed to fetch data from the yahoo historical data API.
      */
-    public String fetchData(String url) throws IOException {
+    private String fetchData(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
