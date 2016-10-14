@@ -1,7 +1,7 @@
 # StockHawk
 This App is Project 3 for the Udacity Android Developer Nanodegree. Stock Hawk tracks and graphs historical pricing for a stock portfolio.
 
-![Movies App](http://www.coronite.net/assets/img/github/project3.jpg)
+![Movies App](http://www.coronite.net/assets/img/github/project3.png)
 
 ## Android Features / Libraries Implemented:
 
